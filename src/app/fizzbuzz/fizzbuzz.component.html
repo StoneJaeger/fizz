@@ -1,1 +1,7 @@
-<p>fizzbuzz works!</p>
+<div>
+    <div *ngIf="results">
+      <div *ngFor="let result of results">
+        <span role="listitem">{{result}}</span>
+      </div> 
+    </div>        
+</div>

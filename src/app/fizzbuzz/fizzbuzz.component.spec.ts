@@ -19,7 +19,11 @@ describe('FizzbuzzComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create fizzbuzz', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should result be an fizz-buzz array',() => {
+    expect(Array.isArray(component.doProcess)).toBeFalsy();
+  })
 });
